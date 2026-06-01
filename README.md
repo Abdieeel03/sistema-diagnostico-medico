@@ -1,3 +1,20 @@
+# 🧑‍⚕️ Sistema de Diagnóstico Médico (Chatbot)
+
+## Clonar el repositorio con los submódulos
+Por defecto `git clone` solo te traería el repositorio padre, y los demás repos estarían vacíos.
+
+Para hacer un git clone del repo padre y traer tambien los submódulos se debe ejecutar el siguiente comando:
+
+```bash
+git clone --recurse-submodules https://github.com/Abdieeel03/sistema-diagnostico-medico.git
+```
+
+Si es que ya hiciste un git clone del repo padre sin el flag `--recurse-submodules` entonces puedes ejecutar el siguiente comando después para actualizar los submódulos:
+
+```bash
+git submodule update --init --recursive
+```
+
 ## Configurar repositorios con SSH (opcional)
 
 Por defecto, el proyecto utiliza URLs HTTPS para facilitar la clonación en cualquier entorno.
