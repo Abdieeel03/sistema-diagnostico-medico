@@ -1,12 +1,12 @@
 [submodule "diagnostico-prologEngine"]
 	path = diagnostico-prologEngine
-	url = git@github.com:Abdieeel03/diagnostico-prologEngine.git
+	url = https://github.com/Abdieeel03/diagnostico-prologEngine.git
 [submodule "diagnostico-pythonConversationEngine"]
 	path = diagnostico-pythonConversationEngine
-	url = git@github.com:Abdieeel03/diagnostico-pythonConversationEngine.git
+	url = https://github.com/Abdieeel03/diagnostico-pythonConversationEngine.git
 [submodule "diagnostico-scalaBackendAPI"]
 	path = diagnostico-scalaBackendAPI
-	url = git@github.com:Abdieeel03/diagnostico-scalaBackendAPI.git
+	url = https://github.com/Abdieeel03/diagnostico-scalaBackendAPI.git
 [submodule "diagnostico-frontendChatbot"]
 	path = diagnostico-frontendChatbot
-	url = git@github.com:Abdieeel03/diagnostico-frontendChatbot.git
+	url = https://github.com/Abdieeel03/diagnostico-frontendChatbot.git
