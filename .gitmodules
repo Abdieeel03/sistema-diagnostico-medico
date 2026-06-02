@@ -1,12 +1,16 @@
 [submodule "diagnostico-prologEngine"]
 	path = diagnostico-prologEngine
-	url = https://github.com/Abdieeel03/diagnostico-prologEngine.git
+  url = https://github.com/Abdieeel03/diagnostico-prologEngine.git
+  branch = main
 [submodule "diagnostico-pythonConversationEngine"]
 	path = diagnostico-pythonConversationEngine
 	url = https://github.com/Abdieeel03/diagnostico-pythonConversationEngine.git
+  branch = main
 [submodule "diagnostico-scalaBackendAPI"]
 	path = diagnostico-scalaBackendAPI
 	url = https://github.com/Abdieeel03/diagnostico-scalaBackendAPI.git
+  branch = main
 [submodule "diagnostico-frontendChatbot"]
 	path = diagnostico-frontendChatbot
-	url = https://github.com/Abdieeel03/diagnostico-frontendChatbot.git
+  url = https://github.com/Abdieeel03/diagnostico-frontendChatbot.git
+  branch = main
