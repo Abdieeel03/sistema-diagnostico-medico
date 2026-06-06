@@ -1,0 +1,42 @@
+services:
+  prolog-engine:
+    build:
+      context: ./diagnostico-prologEngine
+    container_name: diagnostico-prolog
+    ports:
+      - "5000:5000"
+
+  python-engine:
+    build:
+      context: ./diagnostico-pythonConversationEngine
+    container_name: diagnostico-python
+    ports:
+      - "8000:8000"
+    environment:
+      PROLOG_ENGINE_URL: http://prolog-engine:5000
+      PORT: 8000
+      GROQ_API_KEY: ${GROQ_API_KEY}
+    depends_on:
+      - prolog-engine
+
+  scala-backend:
+    build:
+      context: ./diagnostico-scalaBackendAPI
+    container_name: diagnostico-scala
+    ports:
+      - "9000:9000"
+    environment:
+      PYTHON_ENGINE_URL: http://python-engine:8000
+    depends_on:
+      - python-engine
+
+  frontend:
+    build:
+      context: ./diagnostico-frontendChatbot
+    container_name: diagnostico-frontend
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_TARGET: http://scala-backend:9000
+    depends_on:
+      - scala-backend
